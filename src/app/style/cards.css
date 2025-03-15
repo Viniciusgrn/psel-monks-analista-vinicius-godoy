@@ -1,0 +1,90 @@
+/* Card-section */
+.card-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 80px 64px;
+    gap: 40px;
+    width: 1366px;
+    height: 372px;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    width: 375.33px;
+    height: 276px;
+    background: #ffffff;
+    border: 2px solid #dfbbfe;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+/* Copy Block */
+.copy-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 327.33px;
+    height: 164px;
+}
+
+/* Title */
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 327.33px;
+    height: 36px;
+}
+
+.title p {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2d2d2d;
+}
+
+/* Body */
+.body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+    width: 327.33px;
+    height: 120px;
+}
+
+.body p {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2d2d2d;
+}
+
+/* Button */
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 40px;
+    width: 180px;
+    height: 40px;
+    background: #dfbbfe;
+    border-radius: 4px;
+}
+
+.button span {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2d2d2d;
+}

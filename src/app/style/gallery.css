@@ -1,0 +1,102 @@
+/* SimpleGallery.css */
+
+/* Container principal */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 64px 80px;
+    gap: 24px;
+    width: 1366px;
+    height: 845px;
+}
+
+/* Main-picture - parte principal */
+.main-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 34px;
+    width: 591px;
+    height: 717px;
+}
+
+/* Title-box */
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 591px;
+    height: 158px;
+}
+
+/* Title */
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 591px;
+    height: 94px;
+}
+
+/* Título */
+.title h2 {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+/* Subtitle */
+.subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 591px;
+    height: 56px;
+}
+
+.subtitle p {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+/* Main Image */
+.main-image {
+    width: 591px;
+    height: 525px;
+    background: url('https://images6.fanpop.com/image/photos/36800000/-Luffy-monkey-d-luffy-36845047-1280-800.jpg') center/cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+}
+
+/* Secondary-pics */
+.secondary-pics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 591px;
+    height: 717px;
+}
+
+/* Secondary Images */
+.secondary-image {
+    width: 591px;
+    height: 346.5px;
+    background: url('https://images6.fanpop.com/image/photos/36800000/-Luffy-monkey-d-luffy-36845047-1280-800.jpg') center/cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+}

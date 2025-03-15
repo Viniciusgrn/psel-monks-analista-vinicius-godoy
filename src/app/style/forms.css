@@ -1,0 +1,80 @@
+/* Forms-box */
+.forms-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 80px;
+    gap: 40px;
+    width: 1366px;
+    height: 584px;
+    background: #2D2D2D;
+    position: relative;
+    /* Para possibilitar as posições absolutas dos vetores */
+}
+
+/* Image */
+.image {
+    width: 314.55px;
+    height: 300.87px;
+    background: #ccc;
+    /* Ou adicione sua imagem aqui com background-image */
+}
+
+/* Vector */
+.vector {
+    position: absolute;
+    background: #DFBBFE;
+}
+
+.vector:nth-child(2) {
+    left: 5.86%;
+    right: 71.12%;
+    top: 24.24%;
+    bottom: 24.24%;
+}
+
+.vector:nth-child(3) {
+    left: 10.87%;
+    right: 89.12%;
+    top: 49.96%;
+    bottom: 50.04%;
+}
+
+.vector:nth-child(4) {
+    left: 10.81%;
+    right: 89.19%;
+    top: 46.65%;
+    bottom: 53.34%;
+}
+
+.vector:nth-child(5) {
+    left: 11.8%;
+    right: 88.19%;
+    top: 45.69%;
+    bottom: 54.3%;
+}
+
+/* Repita o padrão para os outros vetores com posições ajustadas conforme necessário. */
+
+.vector:nth-child(6) {
+    left: 10.14%;
+    right: 89.27%;
+    top: 61.78%;
+    bottom: 37.02%;
+}
+
+.vector:nth-child(7) {
+    left: 9.12%;
+    right: 90.36%;
+    top: 67.57%;
+    bottom: 31.33%;
+}
+
+.vector:nth-child(8) {
+    left: 9.55%;
+    right: 90.45%;
+    top: 68.12%;
+    bottom: 31.87%;
+}
+
+/* Adicione mais "vector" conforme necessário seguindo o padrão de CSS acima */
