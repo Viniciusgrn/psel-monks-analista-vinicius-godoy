@@ -1,8 +1,3 @@
-/* ============================
-   Desktop – Product Component 2
-=============================== */
-
-/* Container principal */
 .product-container2 {
     display: flex;
     flex-direction: column;
@@ -12,7 +7,6 @@
     width: 100%;
     box-sizing: border-box;
 }
-
 
 .title2 p {
     display: flex;
@@ -26,7 +20,6 @@
     padding: 0px 60px;
 }
 
-/* Container dos itens de produto - layout fluido */
 .product-items2 {
     display: flex;
     justify-content: center;
@@ -37,21 +30,18 @@
     box-sizing: border-box;
 }
 
-/* Cada item de produto */
 .product-item2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Tag do produto */
 .tag2 {
     display: flex;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Container de texto interno da tag */
 .text2 {
     display: flex;
     flex-direction: row;
@@ -62,14 +52,11 @@
     background: #DFDCD5;
     border: 1px solid #7D26C9;
     backdrop-filter: blur(8px);
-    /* Suporte limitado */
     border-radius: 32px;
     box-sizing: border-box;
-    /* Define um tamanho mínimo para que fique consistente */
     min-width: 150px;
 }
 
-/* Texto interno */
 .text2 p {
     margin: 0;
     font-family: 'Inter';
@@ -79,9 +66,6 @@
     color: #7D26C9;
 }
 
-/* ============================
-   Mobile – Product Component 2
-=============================== */
 @media (max-width: 768px) {
     .product-container2 {
         padding: 32px 20px;

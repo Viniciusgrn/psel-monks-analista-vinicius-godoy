@@ -1,16 +1,16 @@
 import React from "react";
-import Head from "./src/(1)head";
-import Products from "./src/(2)products";
-import Gallery from "./src/(3)gallery";
-import App from "./src/(4)appSection";
-import Products2 from "./src/(5)productsTwo";
-import Cards from "./src/(6)cards"
-import Forms from "./src/(7)form"
-import Footer from "./src/(8)footer"
+import Head from "./src/header";
+import Products from "./src/products";
+import Gallery from "./src/gallery";
+import App from "./src/appSection";
+import Products2 from "./src/productsTwo";
+import Cards from "./src/cards"
+import Forms from "./src/form"
+import Footer from "./src/footer"
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#faf4e3" }}>
       <Head />
       <Products />
       <Gallery />

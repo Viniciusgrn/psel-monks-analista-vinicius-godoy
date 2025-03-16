@@ -1,4 +1,3 @@
-/* Footer */
 .footer {
     display: flex;
     flex-direction: column;
@@ -9,23 +8,9 @@
     width: 100%;
     background: #2D2D2D;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
-@media (max-width: 1366px) {
-    .footer {
-        padding: 30px 80px;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer {
-        padding: 20px 40px;
-        gap: 20px;
-    }
-}
-
-/* Social */
 .social {
     display: flex;
     flex-direction: row;
@@ -36,20 +21,6 @@
     height: 32px;
 }
 
-@media (max-width: 1366px) {
-    .social {
-        gap: 30px;
-        width: 180px;
-    }
-}
-
-@media (max-width: 768px) {
-    .social {
-        gap: 20px;
-        width: 150px;
-    }
-}
-
 .group {
     width: 32px;
     height: 30px;
@@ -58,10 +29,8 @@
 .group img {
     width: 100%;
     height: 100%;
-    /* Garante que a imagem se ajuste ao contêiner */
 }
 
-/* Infos */
 .infos {
     display: flex;
     flex-direction: column;
@@ -71,19 +40,6 @@
     gap: 8px;
     width: 572px;
     height: 68px;
-}
-
-@media (max-width: 1366px) {
-    .infos {
-        width: 480px;
-    }
-}
-
-@media (max-width: 768px) {
-    .infos {
-        width: 100%;
-        padding: 0 20px;
-    }
 }
 
 .title {
@@ -106,21 +62,6 @@
     height: 24px;
 }
 
-@media (max-width: 1366px) {
-    .categories {
-        gap: 30px;
-        width: 480px;
-    }
-}
-
-@media (max-width: 768px) {
-    .categories {
-        gap: 20px;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-}
-
 .category {
     width: 113px;
     height: 24px;
@@ -133,7 +74,49 @@
     color: #EAE8E4;
 }
 
+@media (max-width: 1366px) {
+    .footer {
+        padding: 30px 80px;
+        gap: 30px;
+    }
+
+    .social {
+        gap: 30px;
+        width: 180px;
+    }
+
+    .infos {
+        width: 480px;
+    }
+
+    .categories {
+        gap: 30px;
+        width: 480px;
+    }
+}
+
 @media (max-width: 768px) {
+    .footer {
+        padding: 20px 40px;
+        gap: 20px;
+    }
+
+    .social {
+        gap: 20px;
+        width: 150px;
+    }
+
+    .infos {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .categories {
+        gap: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
     .category {
         font-size: 16px;
         width: auto;

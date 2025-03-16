@@ -1,11 +1,8 @@
-/* ========== Estilos Desktop ========== */
-
-/* Container principal da FormsBox */
 .forms-box {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; /* Alterado de center para space-between */
+  justify-content: space-between; 
   padding: 64px 80px;
   gap: 40px;
   width: 100%;
@@ -54,7 +51,6 @@
     box-sizing: border-box;
 }
 
-/* Seção com os inputs que devem ficar em 2 colunas */
 .form-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,8 +58,6 @@
     width: 100%;
 }
 
-
-/* Título do formulário */
 .form-title {
     margin: 0;
     font-family: 'HelveticaNeue', sans-serif;
@@ -79,14 +73,12 @@
     color: #2d2d2d;
 }
 
-/* Conteúdo do formulário */
 .form-content {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* Inputs */
 .form-input,
 .input-verificacao {
     padding: 12px 16px;
@@ -100,9 +92,7 @@
     align-self: center;
     justify-content: center;
     padding: 16px 24px;
-    /* Aumentado */
     font-size: 18px;
-    /* Aumentado */
     background: #dfbbfe;
     border: none;
     border-radius: 8px;
@@ -110,7 +100,6 @@
     margin-top: 10px;
 }
 
-/* Container da imagem */
 .image-container {
     width: 314.55px;
     height: 300.87px;
@@ -118,14 +107,12 @@
     border-radius: 24px;
 }
 
-/* Imagem – cobre todo o container mantendo proporção */
 .banner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* ========== Estilos Mobile ========== */
 @media (max-width: 768px) {
     .forms-box {
         flex-direction: column;
@@ -134,13 +121,11 @@
         height: auto;
     }
 
-    /* Formulário e imagem ocupam 100% da largura */
     .form-container,
     .image-container {
         width: 100%;
     }
 
-    /* Reduz a altura da imagem para mobile */
     .image-container {
         height: 200px;
     }
@@ -150,7 +135,7 @@
         flex-direction: column;
         width: 90%;
     }
-    /* Na versão mobile, para evitar cortes na imagem, usamos object-fit: contain e um leve padding se necessário */
+
     .banner-image {
         width: 100%;
         height: 100%;
@@ -158,7 +143,6 @@
         border-radius: 16px;
     }
 
-    /* Centraliza os textos */
     .form-container {
         text-align:start;
     }
@@ -185,7 +169,6 @@
         align-items: start;
     }
 
-  /* O primeiro elemento (assumindo que é o título) fica sozinho */
     .form-verificacao > h3:first-child {
         grid-row: 1;
         text-align: start;
@@ -200,8 +183,7 @@
         justify-content: center;
         gap: 8px;
     }
-
-
+    
     .form-input,
     .input-verificacao,
     .form-button {

@@ -1,4 +1,3 @@
-/* Estilo geral */
 .hero-lp {
     display: flex;
     flex-direction: row;
@@ -10,7 +9,6 @@
     border-radius: 0px 0px 32px 32px;
 }
 
-/* Seção da esquerda */
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -46,7 +44,6 @@
     cursor: pointer;
 }
 
-/* Título e texto */
 .text-header {
     display: flex;
     flex-direction: column;
@@ -65,12 +62,11 @@
 }
 
 .text-header p {
-    font-size: 18px;
+    font-size: 30px;
     color: #EAE8E4;
     margin-top: 8px;
 }
 
-/* Seção da imagem */
 .hero-image {
     width: 50%;
     height: 100%;
@@ -81,7 +77,6 @@
     overflow: hidden;
 }
 
-/* Imagem */
 .hero-image img {
     position: absolute;
     top: 0;
@@ -92,13 +87,11 @@
     object-fit: cover;
 }
 
-/* Media Queries para responsividade */
 
-/* Tela pequena (até 768px) */
 @media (max-width: 768px) {
     .hero-lp {
         flex-direction: row;
-        height: 320px;
+        height: 360px;
         border-radius: 0 0 0 0;
     }
 
@@ -153,7 +146,7 @@
     }
     
     .text-header p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .hero-image {
@@ -165,7 +158,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        left: 40%;
+        left: 50%;
     }
 
     .mobile-menu {
