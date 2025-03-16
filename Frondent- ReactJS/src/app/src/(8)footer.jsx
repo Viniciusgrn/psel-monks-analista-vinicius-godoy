@@ -6,13 +6,16 @@ const Footer = () => {
         <div className="footer">
             <div className="social">
                 <div className="group">
-                    <img src="image1.png" alt="Icon 1" />
+                    <img src="/footer/instagram.png" alt="Icon 1" />
                 </div>
                 <div className="group">
-                    <img src="image2.png" alt="Icon 2" />
+                    <img src="/footer/whatsapp.png" alt="Icon 2" />
                 </div>
                 <div className="group">
-                    <img src="image3.png" alt="Icon 3" />
+                    <img src="/footer/twitter.png" alt="Icon 3" />
+                </div>
+                <div className="group">
+                    <img src="/footer/face.png" alt="Icon 4" />
                 </div>
             </div>
             <div className="infos">
