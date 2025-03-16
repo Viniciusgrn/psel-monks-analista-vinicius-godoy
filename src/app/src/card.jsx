@@ -1,13 +1,16 @@
-import React from 'react';
-import '../style/card.css'; // Para estilização do Card
+import React from "react";
+import "../style/products.css";
 
-const Card = ({ image, text }) => {
+const Card = ({ product }) => {
     return (
-        <div className="card">
-            <img src={image} alt="Card" className="card-image" />
-            <p className="card-text">{text}</p>
+        <div className="cards">
+            <img src={product.image} alt="Product" className="cards-image" />
+            <div className="cards-frame">
+                <div className="cards-text">{product.title}</div>
+                <div className="cards-description">{product.description}</div>
+            </div>
         </div>
     );
-}
+};
 
 export default Card;

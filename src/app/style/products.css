@@ -1,114 +1,155 @@
-/* Products */
+/* ========== Estilos Desktop ========== */
 
+/* Container principal */
 .products-container {
+    padding: 40px 0px 32px;
+    width: 100%;
+}
+
+/* Title Box */
+.title-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 64px 80px 32px;
-    gap: 40px;
-    width: 1366px;
-    height: 533px;
-}
-
-.title-box {
-    padding: 0;
+    align-items: flex-start;
     gap: 8px;
-    width: 1206px;
-    height: 83px;
+    /* Usa a mesma largura que o container dos cards */
+    width: calc(100% - 160px);
+    margin: 0 auto;
 }
 
-
-
+/* Título */
 .title-product {
-    width: 1206px;
-    height: 47px;
+    width: 100%;
     font-family: 'HelveticaNeue';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    color: #2D2D2D;
-}
-
-.subtitle {
-    width: 1206px;
-    height: 28px;
-    font-family: 'HelveticaNeue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 42px;
+    line-height: 50px;
     letter-spacing: 0.02em;
     color: #2D2D2D;
+    text-align: left;
 }
 
+/* Subtítulo */
+.subtitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    text-align: left;
+}
+
+/* Container dos cards – usa CSS Grid para 4 colunas */
 .products {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
-    width: 1206px;
-    height: 314px;
+    /* O container ocupará toda a largura, com padding horizontal implícito (você pode ajustar conforme o layout global) */
+    width: calc(100% - 160px);
+    margin: 0 auto;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6px 6px 16px;
-    gap: 8px;
-    width: 283.5px;
-    height: 314px;
+/* Card */
+.cards {
     background: #FCFCFD;
-    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.card-image {
-    width: 271.5px;
-    height: 180px;
-    background: url('https://images6.fanpop.com/image/photos/36800000/-Luffy-monkey-d-luffy-36845047-1280-800.jpg') center/cover;
-    border-radius: 8px;
-}
-
-.card-frame {
+    border-radius: 10px;
+    border: 2px solid #D1D5DB;
+    height: 320px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 8px;
-    gap: 8px;
-    width: 271.5px;
-    height: 104px;
+    overflow: hidden;
 }
 
-.card-frame-row {
+/* Imagem do Card */
+.cards-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Container de texto (dentro do card) */
+.cards-frame {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    padding: 0;
-    gap: 10px;
-    width: 255.5px;
-    height: 36px;
+    padding: 12px;
+    gap: 8px;
+    width: 100%;
+    flex: 1;
 }
 
-.card-text {
-    width: 255.5px;
-    height: 36px;
+/* Título do Card */
+.cards-text {
     font-family: 'HelveticaNeue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 38px;
     color: #0C111D;
 }
 
-.card-frame-row .card-description {
-    width: 255.5px;
-    height: 60px;
+/* Descrição do Card */
+.cards-description {
     font-family: 'HelveticaNeue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 32px;
     color: #0C111D;
+}
+
+/* ========== Estilos Mobile ========== */
+@media (max-width: 768px) {
+    .products-container {
+        width: 360px;
+    }
+
+    .title-box {
+        width: calc(100% - 40px);
+    }
+
+    .title-product {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    /* Em mobile, empilha os cards em coluna */
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 312px;
+        margin: 0 auto;
+    }
+
+    /* Ajusta os cards para ocupar 100% da largura do container mobile */
+    .card {
+        width: 312px;
+        height: 272px;
+    }
+
+    .cards-image {
+        width: 312px;
+        height: 180px;
+    }
+
+    .cards-text {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .cards-description {
+        font-size: 22px;
+        line-height: 32px;
+    }
 }

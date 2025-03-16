@@ -1,229 +1,159 @@
-/* App-Section */
+/* ========== Estilos Desktop ========== */
+
+/* Container principal da AppSection */
 .app-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 32px 80px 64px;
-    gap: 24px;
-    width: 75%;
-    /* 75% da largura da tela */
-    max-width: 1366px;
-    /* Limita a largura máxima */
-    height: 312px;
-    border-radius: 32px 32px 0px 0px;
+    padding: 32px 80px;
+    width: 90%;
+    border-radius: 32px 32px 0 0;
     margin: 0 auto;
-    /* Centraliza o conteúdo */
 }
 
-@media (max-width: 1366px) {
-    .app-section {
-        width: 75%;
-        padding: 32px 60px 64px;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .app-section {
-        width: 80%;
-        /* Ajusta para 80% em telas menores */
-        flex-direction: column;
-        padding: 24px 40px 48px;
-        gap: 16px;
-        height: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .app-section {
-        width: 90%;
-        /* Ajusta para 90% em telas ainda menores */
-        flex-direction: column;
-        padding: 24px 20px 40px;
-        gap: 16px;
-        height: auto;
-    }
-}
-
-/* Info-Box */
-.info-box {
+/* Info Box */
+.app-section__info-box {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 40px;
     gap: 40px;
-    width: 1206px;
     height: 216px;
     background: #3C0C60;
     border-radius: 24px;
 }
 
-@media (max-width: 1366px) {
-    .info-box {
-        width: 100%;
-        padding: 32px;
-        gap: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .info-box {
-        flex-direction: column;
-        padding: 24px;
-        gap: 16px;
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Title-box */
-.title-box {
+/* App Title Box */
+.app-section__title-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 868.87px;
-    height: 111px;
+    gap: 10px;
 }
 
-@media (max-width: 1366px) {
-    .title-box {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .title-box {
-        width: 100%;
-    }
-}
-
-/* Title */
-.title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 868.87px;
-    height: 47px;
-}
-
-.lorem-text {
+/* App Title */
+.app-section__title {
     width: 868.87px;
     height: 47px;
     font-family: 'HelveticaNeue';
-    font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 52px;
+    line-height: 50px;
     letter-spacing: 0.02em;
-    color: #EAE8E4;
+    color: #FFFFFF;
+    text-align: left;
 }
 
-@media (max-width: 1366px) {
-    .lorem-text {
-        font-size: 36px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .lorem-text {
-        font-size: 28px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* Subtitle */
-.subtitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 868.87px;
-    height: 56px;
-}
-
-.lorem-subtext {
-    width: 868.87px;
-    height: 56px;
+/* App Subtitle */
+.app-section__subtitle {
+    width: 968.87px;
+    height: 66px;
     font-family: 'HelveticaNeue';
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
-    color: #EAE8E4;
+    color: #FFFFFF;
+    text-align: left;
 }
 
-@media (max-width: 1366px) {
-    .lorem-subtext {
-        font-size: 20px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .lorem-subtext {
-        font-size: 16px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* Buttons */
-.buttons {
+/* App Buttons */
+.app-section__buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 8px;
-    width: 217.13px;
-    height: 136px;
+    width: 100%;
+    height:36px;
 }
 
-@media (max-width: 1366px) {
-    .buttons {
-        width: 100%;
-        gap: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .buttons {
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        gap: 16px;
-    }
-}
-
-/* Image */
-.image {
-    width: 217.13px;
-    height: 64px;
+.app-section__btn-image {
     background-size: cover;
     background-position: center;
     border-radius: 8px;
 }
 
-@media (max-width: 1366px) {
-    .image {
-        width: 180px;
-        height: 56px;
-    }
+/* Download Logos */
+.app-section__download-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
 }
 
+.app-section__download-link img {
+    width: 100%;
+}
+
+/* ========== Estilos Mobile ========== */
 @media (max-width: 768px) {
-    .image {
-        width: 150px;
-        height: 48px;
+    .app-section {
+        width: 80%;
+        margin: 0 auto;
+        padding: 32px 24px;
+        gap: 24px;
+        flex-direction: column;
+        height: auto;
+        border-radius: 32px 32px 0 0;
+    }
+
+    .app-section__info-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 18px;
+        gap: 2px;
+        width: 90%;
+        height: auto;
+    }
+
+    .app-section__title-box {
+        width: 100%;
+        max-width: 264px;
+        margin: 0 auto;
+    }
+
+    .app-section__title {
+        width: 100%;
+        max-width: 264px;
+        height: auto;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .app-section__subtitle {
+        width: 100%;
+        max-width: 264px;
+        height: auto;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .app-section__buttons {
+        width: 100%;
+        max-width: 264px;
+        height:180px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-section__btn-image {
+        width: 100%;
+        max-width: 264px;
+    }
+
+    .app-section__btn-image:first-child {
+        height: 77.82px;
+    }
+
+    .app-section__btn-image:last-child {
+        height: 80.19px;
+    }
+
+    .app-section__download-logos {
+        margin-top: 16px;
+        align-items: center;
+        width: 100%;
     }
 }

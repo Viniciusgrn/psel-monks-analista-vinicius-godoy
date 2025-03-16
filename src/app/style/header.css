@@ -27,11 +27,10 @@
     width: 100%;
     gap: 32px;
     padding: 40px;
-    margin-bottom: 30px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -87,11 +86,10 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
     width: 80%;
     height: auto;
     object-fit: cover;
-    border-radius: 24px;
 }
 
 /* Media Queries para responsividade */
@@ -99,19 +97,37 @@
 /* Tela pequena (até 768px) */
 @media (max-width: 768px) {
     .hero-lp {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
+        flex-direction: row;
+        height: 320px;
+        border-radius: 0 0 0 0;
     }
 
     .hero-content {
-        width: 100%;
-        padding: 20px;
+        width: 40%;
+        padding: 5px;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+    } 
+
+    .hamburger-line {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+        margin: 4px 0;
     }
 
     .header {
-        flex-direction: column;
-        gap: 16px;
+        display: flex;
+        align-self: start;
+        flex-direction: row;
+        gap: 15px;
         padding: 20px;
     }
 
@@ -120,80 +136,51 @@
     }
 
     .menu {
-        gap: 16px;
+        gap: 6px;
     }
 
     .menu-item {
         font-size: 16px;
     }
 
+    .text-header{
+        display: flex;
+        align-self: start;
+        padding: 10px 0px 0px 20px;
+    }
     .text-header h1 {
-        font-size: 40px;
+        font-size: 26px;
+    }
+    
+    .text-header p {
+        font-size: 14px;
     }
 
-    .text-header p {
+    .hero-image {
+        width: 60%;
+        height: 100%;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 40%;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 20px;
+        background: #2D2D2D;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .mobile-menu .menu-item {
         font-size: 16px;
-    }
-
-    .hero-image {
-        width: 100%;
-        height: 300px;
-        /* Ajuste de altura para telas pequenas */
-    }
-
-    .hero-image img {
-        width: 100%;
-        /* Imagem ocupa toda a largura disponível */
-        height: 100%;
-        /* Imagem ocupa toda a altura disponível */
-        object-fit: cover;
-    }
-}
-
-/* Tela extra pequena (até 480px) */
-@media (max-width: 480px) {
-    .hero-lp {
-        padding: 10px;
-    }
-
-    .hero-content {
-        padding: 10px;
-    }
-
-    .header {
-        padding: 10px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .menu {
-        gap: 12px;
-    }
-
-    .menu-item {
-        font-size: 14px;
-    }
-
-    .text-header h1 {
-        font-size: 30px;
-    }
-
-    .text-header p {
-        font-size: 14px;
-    }
-
-    .hero-image {
-        height: 200px;
-        /* Ajuste de altura para telas muito pequenas */
-    }
-
-    .hero-image img {
-        width: 100%;
-        /* Imagem ocupa toda a largura disponível */
-        height: 100%;
-        /* Imagem ocupa toda a altura disponível */
-        object-fit: cover;
+        color: #ffffff;
     }
 }
