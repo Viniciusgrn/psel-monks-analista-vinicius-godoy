@@ -52,13 +52,12 @@
 
 .group {
     width: 32px;
-    height: 32px;
+    height: 30px;
 }
 
 .group img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     /* Garante que a imagem se ajuste ao contêiner */
 }
 
