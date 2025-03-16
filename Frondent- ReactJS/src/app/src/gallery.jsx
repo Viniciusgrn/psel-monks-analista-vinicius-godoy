@@ -12,12 +12,12 @@ const Gallery = () => {
             .then((response) => response.json())
             .then((data) => {
                 setGalleryData({
-                    title: data.acf.titulo,
-                    subtitle: data.acf.subtitulo,
-                    mainImage: data.acf.imagemPrincipal,
+                    title: data.acf.title,
+                    subtitle: data.acf.subtitle,
+                    mainImage: data.acf.principalImage,
                     secondaryImages: [
-                        data.acf.imagemSecundaria1,
-                        data.acf.imagemSecundaria2
+                        data.acf.secondaryImage1,
+                        data.acf.secondaryImage2
                     ]
                 });
                 setLoading(false);

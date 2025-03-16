@@ -39,16 +39,24 @@ const Footer = () => {
         <div className="footer">
             <div className="social">
                 <div className="group">
-                    <img src={footerData.instagram} alt="Instagram" />
+                    <a href="#">
+                        <img src={footerData.instagram} alt="Instagram" />
+                    </a>
                 </div>
                 <div className="group">
-                    <img src={footerData.whatsapp} alt="WhatsApp" />
+                    <a href="#">
+                        <img src={footerData.whatsapp} alt="WhatsApp" />
+                    </a>
                 </div>
                 <div className="group">
-                    <img src={footerData.twitter} alt="Twitter" />
+                    <a href="#">
+                        <img src={footerData.twitter} alt="Twitter" />
+                    </a>
                 </div>
                 <div className="group">
-                    <img src={footerData.facebook} alt="Facebook" />
+                    <a href="#">
+                        <img src={footerData.facebook} alt="Facebook" />
+                    </a>
                 </div>
             </div>
             <div className="infos">
