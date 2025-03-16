@@ -1,12 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "../style/header.css";
+import MobileMenu from "./MobileMenu";
 
 const Head = () => {
     const [data, setData] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    
 
     const toggleMenu = () => {
         setMenuOpen((prev) => !prev);
@@ -27,6 +30,13 @@ const Head = () => {
 
     if (loading) return <p></p>;
     if (error) return <p>Erro: {error.message}</p>;
+    
+    const menuItems = [
+        data.category1,
+        data.category2,
+        data.category3,
+        data.category4,
+    ];
 
     return (
         <div className="hero-lp">
@@ -50,14 +60,7 @@ const Head = () => {
                     <p>{data.subtitle}</p>
                 </div>
 
-                {menuOpen && (
-                    <div className="mobile-menu">
-                        <div className="menu-item">{data.category1}</div>
-                        <div className="menu-item">{data.category2}</div>
-                        <div className="menu-item">{data.category3}</div>
-                        <div className="menu-item">{data.category4}</div>
-                    </div>
-                )}
+                {menuOpen && <MobileMenu menuItems={menuItems} onClose={toggleMenu} />}
 
             </div>
             <div className="hero-image">
