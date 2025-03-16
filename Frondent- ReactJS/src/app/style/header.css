@@ -87,17 +87,6 @@
     object-fit: cover;
 }
 
-.menu-indicator {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: #ffffff;
-    border-radius: 50%;
-    transition: left 0.3s ease;
-}
-
 @media (max-width: 768px) {
     .hero-lp {
         flex-direction: row;
