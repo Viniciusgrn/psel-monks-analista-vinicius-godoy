@@ -1,0 +1,131 @@
+/* ========== Estilos Desktop ========== */
+
+/* Container principal da galeria */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 64px 80px;
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Área principal (Main-picture) */
+.main-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+    /* Ocupa metade do espaço disponível, considerando o gap */
+    width: calc(50% - 12px);
+}
+
+/* Title-box dentro da área principal */
+.main-picture .title-box {
+    width: 100%;
+}
+
+/* Título da galeria */
+.title-gallery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.title-gallery h2 {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    margin: 0;
+}
+
+/* Subtítulo da galeria */
+.subtitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitle p {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    margin: 0;
+}
+
+/* Container para a imagem principal */
+.main-image-container {
+    width: 100%;
+    height: 535px;
+    overflow: hidden;
+    border-radius: 24px ;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Área secundária com imagens */
+.secondary-pics {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* Ocupa a outra metade do espaço */
+    width: calc(50% - 12px);
+}
+
+/* Container para cada imagem secundária */
+.secondary-image-container {
+    width: 100%;
+    height: 346.5px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.secondary-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== Estilos Mobile ========== */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        padding: 32px 20px;
+        gap: 16px;
+    }
+
+    /* Em mobile, as áreas ficam empilhadas */
+    .main-picture,
+    .secondary-pics {
+        width: 100%;
+    }
+
+    /* Ajuste da altura para mobile */
+    .main-image-container {
+        height: 300px;
+    }
+
+    .secondary-image-container {
+        height: 200px;
+    }
+
+    .title-gallery h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .subtitle p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

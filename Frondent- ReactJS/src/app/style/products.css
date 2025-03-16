@@ -1,0 +1,155 @@
+/* ========== Estilos Desktop ========== */
+
+/* Container principal */
+.products-container {
+    padding: 40px 0px 32px;
+    width: 100%;
+}
+
+/* Title Box */
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    /* Usa a mesma largura que o container dos cards */
+    width: calc(100% - 160px);
+    margin: 0 auto;
+}
+
+/* Título */
+.title-product {
+    width: 100%;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    text-align: left;
+}
+
+/* Subtítulo */
+.subtitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    text-align: left;
+}
+
+/* Container dos cards – usa CSS Grid para 4 colunas */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    /* O container ocupará toda a largura, com padding horizontal implícito (você pode ajustar conforme o layout global) */
+    width: calc(100% - 160px);
+    margin: 0 auto;
+}
+
+/* Card */
+.cards {
+    background: #FCFCFD;
+    border-radius: 10px;
+    border: 2px solid #D1D5DB;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Imagem do Card */
+.cards-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Container de texto (dentro do card) */
+.cards-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 8px;
+    width: 100%;
+    flex: 1;
+}
+
+/* Título do Card */
+.cards-text {
+    font-family: 'HelveticaNeue';
+    font-size: 26px;
+    line-height: 38px;
+    color: #0C111D;
+}
+
+/* Descrição do Card */
+.cards-description {
+    font-family: 'HelveticaNeue';
+    font-size: 22px;
+    line-height: 32px;
+    color: #0C111D;
+}
+
+/* ========== Estilos Mobile ========== */
+@media (max-width: 768px) {
+    .products-container {
+        width: 360px;
+    }
+
+    .title-box {
+        width: calc(100% - 40px);
+    }
+
+    .title-product {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    /* Em mobile, empilha os cards em coluna */
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 312px;
+        margin: 0 auto;
+    }
+
+    /* Ajusta os cards para ocupar 100% da largura do container mobile */
+    .card {
+        width: 312px;
+        height: 272px;
+    }
+
+    .cards-image {
+        width: 312px;
+        height: 180px;
+    }
+
+    .cards-text {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .cards-description {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}

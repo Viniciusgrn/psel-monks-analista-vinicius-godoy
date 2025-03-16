@@ -1,0 +1,113 @@
+/* ============================
+   Desktop – Product Component 2
+=============================== */
+
+/* Container principal */
+.product-container2 {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 32px;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.title2 p {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    font-family: 'HelveticaNeue';
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    padding: 0px 60px;
+}
+
+/* Container dos itens de produto - layout fluido */
+.product-items2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1206px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Cada item de produto */
+.product-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tag do produto */
+.tag2 {
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container de texto interno da tag */
+.text2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    gap: 10px;
+    background: #DFDCD5;
+    border: 1px solid #7D26C9;
+    backdrop-filter: blur(8px);
+    /* Suporte limitado */
+    border-radius: 32px;
+    box-sizing: border-box;
+    /* Define um tamanho mínimo para que fique consistente */
+    min-width: 150px;
+}
+
+/* Texto interno */
+.text2 p {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #7D26C9;
+}
+
+/* ============================
+   Mobile – Product Component 2
+=============================== */
+@media (max-width: 768px) {
+    .product-container2 {
+        padding: 32px 20px;
+    }
+
+    .title2 p {
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .product-items2 {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 16px;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .text2 {
+        padding: 8px 20px;
+        min-width: auto;
+    }
+
+    .text2 p {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+}
