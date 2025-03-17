@@ -42,7 +42,6 @@
     text-align: center;
 }
 
-/* Tablet landscape */
 @media (max-width: 1024px) and (orientation: landscape) {
     .mobile-menu-container {
         max-width: 480px;
