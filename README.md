@@ -64,8 +64,8 @@ define('JWT_AUTH_CORS_ENABLE', true);
 ## Clonar o repositório:
 
 ```sh
-git clone https://github.com/yourusername/psel-monks-analista-[SeuNome].git
-cd psel-monks-analista-[SeuNome]
+git clone https://github.com/yourusername/psel-monks-analista-vinicius-godoy.git
+cd psel-monks-analista-vinicius-godoy
 ```
 
 ## Configurar a URL do backend:
